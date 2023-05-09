@@ -1,0 +1,1057 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  scroll-behavior: smooth;
+}
+
+header {
+  width: 100%;
+  height: 60px;
+  background-color: #fafafa;
+}
+header nav {
+  width: 80%;
+  height: 100%;
+  margin: auto;
+  display: flex;
+}
+header nav .bar {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+header nav .bar ul {
+  display: flex;
+  list-style: none;
+}
+header nav .bar ul a {
+  text-decoration: none;
+  margin-inline: 10px;
+  font-size: 13px;
+  color: rgba(0, 0, 0, 0.821);
+}
+header nav .bar .logo {
+  width: 25px;
+  height: 25px;
+}
+header nav .bar .logo img {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+header nav .login {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 5px;
+}
+header nav .login .left {
+  display: flex;
+}
+header nav .login .left button {
+  padding: 10px 16px;
+  border: 0px solid white;
+  background-color: white;
+  border-radius: 4px;
+  font-size: 13px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.738);
+  box-shadow: 0px 2px 2px rgba(128, 128, 128, 0.522);
+  cursor: pointer;
+}
+header nav .login .left button:hover {
+  border: 1px solid #ff6400;
+  color: #ff6400;
+  border-radius: 4px;
+}
+header nav .login .right {
+  gap: 5px;
+  display: flex;
+  justify-content: space-around;
+}
+header nav .login .right button:first-child {
+  background-color: #323232;
+}
+header nav .login .right button:first-child i {
+  color: white;
+}
+header nav .login .right button {
+  padding: 10px 13px;
+  border-radius: 5px;
+  border: 0px;
+  cursor: pointer;
+  background-color: white;
+  box-shadow: 0px 2px 2px rgba(128, 128, 128, 0.555);
+  font-weight: 500;
+}
+
+@media only screen and (max-width: 600px) {
+  header nav .bar .logo {
+    margin: auto;
+    margin-left: 150px;
+  }
+  header nav .bar ul {
+    display: none;
+  }
+  header nav .login {
+    display: none;
+  }
+}
+@media only screen and (max-width: 900px) {
+  header nav .bar .logo {
+    margin: auto;
+    margin-left: 150px;
+  }
+  header nav .bar ul {
+    display: none;
+  }
+  header nav .login {
+    display: none;
+  }
+}
+main {
+  width: 80%;
+  height: 3720px;
+  margin: auto;
+}
+main .secondMenu {
+  width: 100%;
+  height: 80px;
+  display: flex;
+}
+main .secondMenu .left {
+  width: 70%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+main .secondMenu .left ul {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+}
+main .secondMenu .left ul a {
+  color: black;
+  font-weight: 500;
+  text-decoration: none;
+  font-size: 21px;
+  letter-spacing: -0.1mm;
+}
+main .secondMenu .right {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+main .secondMenu .right button {
+  color: black;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 30px;
+  border: 0.7px solid rgba(128, 128, 128, 0.368);
+  padding: 15px 19px;
+  background-color: white;
+  cursor: pointer;
+}
+main .secondMenu .right button i {
+  font-size: 17px;
+  color: #ff6400;
+}
+main .slide {
+  width: 100%;
+  height: 450px;
+  background-color: #ff6400;
+  border-radius: 10px;
+  overflow: hidden;
+}
+main .slide .slider {
+  width: 4870px;
+  height: 100%;
+  display: flex;
+  position: relative;
+  gap: 2px;
+}
+main .slide .slider .first {
+  width: 1215px;
+  height: 100%;
+  display: flex;
+  background-color: #ff6400;
+  border-radius: 10px;
+}
+main .slide .slider .first .img {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+main .slide .slider .first .img img {
+  width: 70%;
+  height: 90%;
+}
+main .slide .slider .first .write {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+main .slide .slider .first .write h1 {
+  font-size: 35px;
+  font-weight: 700;
+  color: white;
+}
+main .slide .slider .first .write p {
+  margin-top: 30px;
+  color: white;
+}
+main .slide .slider .first .write button {
+  margin-top: 50px;
+  padding: 10px 25px;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: 500;
+  border: 0.7px solid white;
+  color: white;
+  background-color: #ff6400;
+  cursor: pointer;
+}
+main .slide .slider .second {
+  width: 1215px;
+  height: 100%;
+  background-color: #ff6400;
+  border-radius: 10px;
+  display: flex;
+}
+main .slide .slider .second .img {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+main .slide .slider .second .img img {
+  width: 70%;
+  height: 90%;
+}
+main .slide .slider .second .write {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+main .slide .slider .second .write h1 {
+  font-size: 35px;
+  font-weight: 700;
+  color: white;
+}
+main .slide .slider .second .write p {
+  margin-top: 30px;
+  color: white;
+}
+main .slide .slider .second .write button {
+  margin-top: 50px;
+  padding: 10px 25px;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: 500;
+  border: 0.7px solid white;
+  color: white;
+  background-color: #ff6400;
+}
+main .slide .slider .third {
+  width: 1215px;
+  height: 100%;
+  background-color: #ff6400;
+  border-radius: 10px;
+  display: flex;
+}
+main .slide .slider .third .img {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+main .slide .slider .third .img img {
+  width: 70%;
+  height: 90%;
+}
+main .slide .slider .third .write {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+main .slide .slider .third .write h1 {
+  font-size: 35px;
+  font-weight: 700;
+  color: white;
+}
+main .slide .slider .third .write p {
+  margin-top: 30px;
+  color: white;
+}
+main .slide .slider .third .write button {
+  margin-top: 50px;
+  padding: 10px 25px;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: 500;
+  border: 0.7px solid white;
+  color: white;
+  background-color: #ff6400;
+}
+main .slide .slider .fourth {
+  width: 1215px;
+  height: 100%;
+  background-color: #ff6400;
+  border-radius: 10px;
+  display: flex;
+}
+main .slide .slider .fourth .img {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+main .slide .slider .fourth .img img {
+  width: 80%;
+  height: 90%;
+}
+main .slide .slider .fourth .write {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+main .slide .slider .fourth .write h1 {
+  font-size: 35px;
+  font-weight: 700;
+  color: white;
+}
+main .slide .slider .fourth .write p {
+  margin-top: 30px;
+  color: white;
+}
+main .points {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+main .points ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+main .points ul a {
+  font-size: 6px;
+  color: rgba(128, 128, 128, 0.559);
+  text-decoration: none;
+}
+main .points ul a:hover {
+  color: #ff6400;
+}
+main .faizler {
+  width: 100%;
+  height: 310px;
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+main .faizler .div {
+  width: 23%;
+  height: 100%;
+  background-color: #fafafa;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+main .faizler .div h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 35px 0px;
+}
+main .faizler .div h1 {
+  font-size: 50px;
+  color: #ff6400;
+}
+main .faizler .div button {
+  padding: 15px 40px;
+  background-color: #ff6400;
+  border-radius: 30px;
+  border: 1px solid #ff6400;
+  color: white;
+  font-weight: 500;
+  margin-top: 55px;
+  cursor: pointer;
+}
+main .Ucard {
+  height: 410px;
+  background-color: #fafafa;
+  margin-top: 80px;
+  border-radius: 10px;
+  display: flex;
+}
+main .Ucard .img {
+  width: 50%;
+  height: 100%;
+}
+main .Ucard .img img {
+  margin-top: -100px;
+}
+main .Ucard .write {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main .Ucard .write div {
+  width: 90%;
+}
+main .Ucard .write h2 {
+  font-size: 27px;
+  font-weight: 900;
+  color: #ff6400;
+  letter-spacing: 0.3mm;
+}
+main .Ucard .write p {
+  margin: 30px 0px;
+}
+main .Ucard .write button:first-child {
+  padding: 15px 40px;
+  background-color: #ff6400;
+  border-radius: 30px;
+  border: 1px solid #ff6400;
+  color: white;
+  font-weight: 500;
+  margin-top: 55px;
+  cursor: pointer;
+}
+main .Ucard .write button:last-child {
+  padding: 15px 40px;
+  background-color: white;
+  border-radius: 30px;
+  border: 1px solid #969696;
+  color: #969696;
+  font-weight: 500;
+  margin-top: 55px;
+  cursor: pointer;
+}
+main .Ucard .write button:nth-child(2) {
+  padding: 15px 40px;
+  background-color: white;
+  border-radius: 30px;
+  border: 1px solid #969696;
+  color: #969696;
+  font-weight: 500;
+  margin-top: 55px;
+  cursor: pointer;
+}
+main .Ubank {
+  width: 100%;
+  height: 410px;
+  background-color: #fafafa;
+  margin-top: 80px;
+  border-radius: 10px;
+  display: flex;
+}
+main .Ubank .write {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .Ubank .write div {
+  width: 80%;
+}
+main .Ubank .write div button {
+  padding: 15px 40px;
+  background-color: #ff6400;
+  border-radius: 30px;
+  border: 1px solid #ff6400;
+  color: white;
+  font-weight: 500;
+  margin-top: 55px;
+  cursor: pointer;
+}
+main .Ubank .write div h2 {
+  font-size: 27px;
+  font-weight: 900;
+  color: #ff6400;
+  margin-bottom: 40px;
+  letter-spacing: 0.3mm;
+}
+main .Ubank .write .div {
+  display: flex;
+  gap: 15px;
+  margin-top: 50px;
+}
+main .Ubank .write .div .imgdiv {
+  width: 30%;
+  height: 35px;
+  border-radius: 5px;
+}
+main .Ubank .write .div .imgdiv img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  cursor: pointer;
+}
+main .Ubank .img {
+  width: 50%;
+  height: 100%;
+}
+main .Ubank .img img {
+  width: 80%;
+  height: 125%;
+  margin-top: -100px;
+}
+main .valyuta {
+  width: 100%;
+  height: 450px;
+  background-color: #fafafa;
+  margin-top: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+main .valyuta .center {
+  width: 90%;
+  height: 90%;
+}
+main .valyuta .center h2 {
+  color: #ff6400;
+  font-weight: 800;
+  font-size: 28px;
+  letter-spacing: 0.4mm;
+}
+main .valyuta .center .birs {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
+main .valyuta .center .birs .bir {
+  width: 27%;
+  height: 100%;
+}
+main .valyuta .center .birs .bir h4 {
+  font-size: 22px;
+  margin: 30px 0px 30px;
+}
+main .valyuta .center .birs .bir .table {
+  width: 100%;
+  height: 60%;
+}
+main .valyuta .center .birs .bir table {
+  width: 100%;
+}
+main .valyuta .center .birs .bir tr {
+  font-weight: 700;
+  color: #323232;
+}
+main .valyuta .center .birs .bir td {
+  width: 50%;
+  text-align: start;
+  padding: 5px;
+}
+main .valyuta .center .birs .bir tr:first-child {
+  color: #969696;
+  font-size: 13px;
+}
+main .news {
+  width: 100%;
+  height: 300px;
+  margin-top: 70px;
+  display: flex;
+  justify-content: space-between;
+}
+main .news .new {
+  width: 30%;
+  height: 100%;
+  background-color: #fafafa;
+  border-radius: 10px;
+  padding: 20px;
+  cursor: pointer;
+}
+main .news .new:hover {
+  background-color: #ff6400;
+  color: white;
+}
+main .news .new:hover h3 {
+  color: white;
+}
+main .news .new h3 {
+  margin-bottom: 30px;
+  color: #ff6400;
+}
+main .xidmet {
+  width: 100%;
+  height: 300px;
+  margin-top: 70px;
+  display: flex;
+  justify-content: space-between;
+}
+main .xidmet .big {
+  width: 60%;
+  height: 100%;
+  background-color: #fafafa;
+  border-radius: 10px;
+  display: flex;
+}
+main .xidmet .big .write {
+  width: 65%;
+  height: 100%;
+}
+main .xidmet .big .write div {
+  margin: auto;
+  width: 80%;
+  height: 80%;
+}
+main .xidmet .big .write div h1 {
+  color: #ff6400;
+  margin: 20px 0px;
+}
+main .xidmet .big .write div button {
+  padding: 15px 40px;
+  background-color: #ff6400;
+  border-radius: 30px;
+  border: 1px solid #ff6400;
+  color: white;
+  font-weight: 500;
+  margin-top: 55px;
+  cursor: pointer;
+}
+main .xidmet .big .img {
+  width: 35%;
+  height: 100%;
+}
+main .xidmet .big .img img {
+  width: 100%;
+  height: 90%;
+  margin-top: 32px;
+}
+main .xidmet .small {
+  width: 38%;
+  height: 100%;
+  background-color: #fafafa;
+  border-radius: 10px;
+  padding: 40px;
+}
+main .xidmet .small h1 {
+  color: #ff6400;
+}
+main .xidmet .small button {
+  padding: 15px 40px;
+  background-color: #ff6400;
+  border-radius: 30px;
+  border: 1px solid #ff6400;
+  color: white;
+  font-weight: 500;
+  margin-top: 55px;
+  cursor: pointer;
+}
+main .infos {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  margin-top: 120px;
+}
+main .infos .info {
+  width: 15%;
+  height: 100%;
+}
+main .infos .info p {
+  font-size: 14px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+main footer {
+  width: 100%;
+  height: 150px;
+}
+main footer .icons {
+  width: 100%;
+  height: 40%;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+main footer .icons i {
+  padding: 5px 6px;
+  border-radius: 50%;
+  background-color: #969696;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+}
+main footer .icons i:first-child {
+  background-color: #ff6400;
+}
+main footer .alt {
+  width: 100%;
+  height: 60%;
+  display: flex;
+}
+main footer .alt .write {
+  width: 60%;
+  height: 100%;
+}
+main footer .alt .write h5 {
+  color: #323232;
+}
+main footer .alt .write p {
+  font-size: 12px;
+  color: #323232;
+  margin-top: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  main {
+    width: 95%;
+  }
+  main .secondMenu {
+    display: none;
+  }
+  main .slide .slider .first {
+    flex-direction: column;
+    height: 400px;
+    width: 800px;
+  }
+  main .slide .slider .second {
+    flex-direction: column;
+    height: 400px;
+    width: 800px;
+  }
+  main .slide .slider .third {
+    flex-direction: column;
+    height: 400px;
+    width: 800px;
+  }
+  main .slide .slider .fourth {
+    flex-direction: column;
+    height: 400px;
+    width: 800px;
+  }
+  main .faizler {
+    height: -moz-max-content;
+    height: max-content;
+    flex-wrap: wrap;
+  }
+  main .faizler .div {
+    flex: 50%;
+  }
+  main .Ucard {
+    height: -moz-max-content;
+    height: max-content;
+    flex-direction: column;
+  }
+  main .Ucard .img {
+    width: 100%;
+  }
+  main .Ucard .img img {
+    width: 100%;
+    margin: auto;
+  }
+  main .Ucard .write {
+    width: 100%;
+  }
+  main .Ucard .write button {
+    margin: auto;
+  }
+  main .Ucard .write button:first-child {
+    width: 100%;
+  }
+  main .Ubank {
+    flex-direction: column;
+    height: -moz-max-content;
+    height: max-content;
+  }
+  main .Ubank .write {
+    width: 100%;
+  }
+  main .Ubank .img {
+    width: 100%;
+  }
+  main .Ubank .img img {
+    width: 90%;
+    height: -moz-max-content;
+    height: max-content;
+    margin: auto;
+  }
+  main .valyuta {
+    width: 100%;
+    height: -moz-max-content;
+    height: max-content;
+  }
+  main .valyuta .center .birs .bir:nth-child(2) {
+    display: none;
+  }
+  main .valyuta .center .birs .bir:last-child {
+    display: none;
+  }
+  main .news {
+    flex-direction: column;
+    height: -moz-max-content;
+    height: max-content;
+  }
+  main .news .new {
+    width: 100%;
+  }
+  main .xidmet {
+    flex-direction: column;
+    height: -moz-max-content;
+    height: max-content;
+  }
+  main .xidmet .big {
+    width: 100%;
+  }
+  main .xidmet .small {
+    width: 100%;
+  }
+  main .infos {
+    display: none;
+  }
+  main footer .icons {
+    justify-content: center;
+  }
+  main footer .alt {
+    justify-content: center;
+  }
+}
+@media only screen and (max-width: 900px) {
+  main {
+    width: 95%;
+  }
+  main .secondMenu {
+    display: none;
+  }
+  main .slide .slider .first {
+    flex-direction: column;
+    height: 400px;
+    width: 800px;
+  }
+  main .slide .slider .second {
+    flex-direction: column;
+    height: 400px;
+    width: 800px;
+  }
+  main .slide .slider .third {
+    flex-direction: column;
+    height: 400px;
+    width: 800px;
+  }
+  main .slide .slider .fourth {
+    flex-direction: column;
+    height: 400px;
+    width: 800px;
+  }
+  main .faizler {
+    height: -moz-max-content;
+    height: max-content;
+    flex-wrap: wrap;
+  }
+  main .faizler .div {
+    flex: 50%;
+  }
+  main .Ucard {
+    height: -moz-max-content;
+    height: max-content;
+    flex-direction: column;
+  }
+  main .Ucard .img {
+    width: 100%;
+  }
+  main .Ucard .img img {
+    width: 100%;
+    margin: auto;
+  }
+  main .Ucard .write {
+    width: 100%;
+  }
+  main .Ucard .write button {
+    margin: auto;
+  }
+  main .Ucard .write button:first-child {
+    width: 100%;
+  }
+  main .Ubank {
+    flex-direction: column;
+    height: -moz-max-content;
+    height: max-content;
+  }
+  main .Ubank .write {
+    width: 100%;
+  }
+  main .Ubank .img {
+    width: 100%;
+  }
+  main .Ubank .img img {
+    width: 90%;
+    height: -moz-max-content;
+    height: max-content;
+    margin: auto;
+  }
+  main .valyuta {
+    width: 100%;
+    height: -moz-max-content;
+    height: max-content;
+  }
+  main .valyuta .center .birs .bir:nth-child(2) {
+    display: none;
+  }
+  main .valyuta .center .birs .bir:last-child {
+    display: none;
+  }
+  main .news {
+    flex-direction: column;
+    height: -moz-max-content;
+    height: max-content;
+  }
+  main .news .new {
+    width: 100%;
+  }
+  main .xidmet {
+    flex-direction: column;
+    height: -moz-max-content;
+    height: max-content;
+  }
+  main .xidmet .big {
+    width: 100%;
+  }
+  main .xidmet .small {
+    width: 100%;
+  }
+  main .infos {
+    display: none;
+  }
+  main footer .icons {
+    justify-content: center;
+  }
+  main footer .alt {
+    justify-content: center;
+  }
+}
+.mesageButton {
+  position: fixed;
+  margin-left: 1250px;
+  margin-top: 550px;
+  z-index: 5;
+}
+.mesageButton #checkbox {
+  display: none;
+}
+.mesageButton .check {
+  padding: 17px 20px;
+  background-color: white;
+  border-radius: 50%;
+  box-shadow: 1px 1px 9px gray;
+  cursor: pointer;
+}
+.mesageButton .check i {
+  font-size: 20px;
+  color: #ff6400;
+  font-weight: 500;
+}
+.mesageButton .div {
+  width: 300px;
+  height: 600px;
+  border-radius: 10px;
+  margin-top: -620px;
+  margin-left: -300px;
+  background-color: #e8edf3;
+  box-shadow: 1px 1px 9px gray;
+  transform: scale(0);
+}
+.mesageButton .div .divbir {
+  width: 100%;
+  height: 10%;
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mesageButton .div .diviki {
+  width: 100%;
+  height: 90%;
+  background-color: #e8edf3;
+  border-radius: 0px 0px 10px 10px;
+  padding-top: 20px;
+}
+.mesageButton .div .diviki .form {
+  width: 90%;
+  height: 90%;
+  background-color: white;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+  padding-left: 15px;
+}
+.mesageButton .div .diviki .form span {
+  color: red;
+}
+.mesageButton .div .diviki .form .person {
+  width: 40px;
+  height: 40px;
+  background-color: #ff6400;
+  position: absolute;
+  border-radius: 50%;
+  text-align: center;
+  margin-top: -20px;
+  margin-left: -10px;
+}
+.mesageButton .div .diviki .form .person i {
+  margin-top: 10px;
+  font-size: 20px;
+  color: white;
+}
+.mesageButton .div .diviki .form p {
+  margin-top: 20px;
+}
+.mesageButton .div .diviki .form input {
+  width: 90%;
+  height: 40px;
+  border-radius: 10px;
+  background-color: #fafafa;
+  border: 1px solid grey;
+}
+.mesageButton .div .diviki .form button {
+  padding: 10px 30px;
+  background-color: #ff6400;
+  border-radius: 10px;
+  width: 90%;
+  border: 1px solid #ff6400;
+  color: white;
+  font-size: 17px;
+  font-weight: 400;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.mesageButton .div .diviki .form div {
+  margin-top: 15px;
+}
+.mesageButton #checkbox:checked + .div {
+  display: block;
+  animation: chat 0.3s linear forwards;
+}
+@keyframes chat {
+  100% {
+    transform: scale(1);
+  }
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,110 @@
+.mesageButton {
+    position: fixed;
+    margin-left: 1250px;
+    margin-top: 550px;
+    z-index: 5;
+    #checkbox {
+      display: none;
+    }
+    .check {
+      padding: 17px 20px;
+      background-color: white;
+      border-radius: 50%;
+      box-shadow: 1px 1px 9px gray;
+      cursor: pointer;
+      i {
+        font-size: 20px;
+        color: #ff6400;
+        font-weight: 500;
+      }
+    }
+    .div {
+      width: 300px;
+      height: 600px;
+      border-radius: 10px;
+      margin-top: -620px;
+      margin-left: -300px;
+      background-color:#e8edf3;
+      box-shadow: 1px 1px 9px gray;
+      transform: scale(0);
+      .divbir{
+        width:100%;
+        height: 10%;
+        background-color:white ;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .diviki{
+        width: 100%;
+        height: 90%;
+        background-color: #e8edf3;
+        border-radius: 0px 0px 10px 10px;
+        padding-top: 20px;
+        .form{
+          width: 90%;
+          height: 90%;
+          background-color: white;
+          margin: auto;
+          display: flex;
+          justify-content: center;
+          border-radius: 10px;
+          padding-left: 15px;
+          span{
+            color: red;
+          }
+          .person{
+            width: 40px;
+            height: 40px;
+            background-color: #ff6400;
+            position: absolute;
+            border-radius: 50%;
+            text-align: center;
+            margin-top: -20px;
+            margin-left: -10px;
+            i{
+              margin-top: 10px;
+              font-size: 20px;
+              color: white;
+            }
+          }
+          p{
+            margin-top: 20px;
+          }
+          input{
+            width: 90%;
+            height: 40px;
+            border-radius: 10px;
+            background-color:#fafafa;
+            border: 1px solid grey;
+          }
+          button{
+            padding: 10px 30px;
+            background-color: #ff6400;
+            border-radius: 10px;
+            width: 90%;
+            border: 1px solid #ff6400;
+            color: white;
+            font-size: 17px;
+            font-weight: 400;
+            margin-top: 10px;
+            cursor: pointer;
+          }
+         div{
+          margin-top: 15px;
+         }
+         
+        }
+      }
+    }
+    #checkbox:checked + .div {
+      display: block;
+      animation: chat 0.3s linear forwards;
+    }
+    @keyframes chat {
+      100% {
+        transform: scale(1);
+      }
+    }
+  }
